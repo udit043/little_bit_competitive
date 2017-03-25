@@ -1,0 +1,25 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern; 
+import java.util.*;
+ 
+ 
+class TestClass 
+{
+    public static boolean isValidIP(String ipAddr)
+    {
+        Pattern ptn = Pattern.compile("^([01]?\\d\\d?|2[0-4]\\d|25[0-5])\\." + "([01]?\\d\\d?|2[0-4]\\d|25[0-5])\\."  + "([01]?\\d\\d?|2[0-4]\\d|25[0-5])\\." + "([01]?\\d\\d?|2[0-4]\\d|25[0-5])$");
+        Matcher mtch = ptn.matcher(ipAddr);
+        return mtch.find();
+    }
+    public static void main(String args[] ) throws Exception 
+    {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String line = br.readLine();
+        if(TestClass.isValidIP(line))
+            System.out.println("YES\n");
+        else
+            System.out.println("NO\n");
+    }
+}

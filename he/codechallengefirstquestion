@@ -1,0 +1,8 @@
+t = input()
+while(t > 0):
+	t -= 1; sm=0
+	s = raw_input()
+	for i in range(1,len(s)):
+		if((s[i] == 'R') & (s[i-1] == 'O')):
+			sm += 1
+	print sm

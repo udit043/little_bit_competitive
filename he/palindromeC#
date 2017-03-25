@@ -1,0 +1,32 @@
+using System;
+namespace test
+{
+    class try2
+    {
+        static void Main(string[] args)
+        {
+        	string input = Console.ReadLine();
+			int number,j;
+			Int32.TryParse(input, out number);
+        	while(number-- > 0)
+        	{
+            	string ori;
+            	string dup="";
+            	ori = Console.ReadLine();
+            	for (j = ori.Length-1; j >= 0; --j)
+            	{
+            	    dup += ori[j].ToString();
+            	}
+            	if (dup != ori)
+            	{
+            	    Console.WriteLine("NO");
+            	}
+            	else
+            	{
+            	    Console.WriteLine("YES");
+            	}
+            	Console.ReadKey();
+        	}
+        }
+    }
+}

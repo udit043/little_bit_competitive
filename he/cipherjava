@@ -1,0 +1,53 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern; 
+import java.util.*;
+
+
+class TestClass 
+{
+    public static void main(String args[] ) throws Exception 
+    {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int t=Integer.parseInt(br.readLine());
+        int loop;
+        for(loop=1; loop <= t; ++loop)
+        {
+        	String s1 = br.readLine();
+        	String s2 = br.readLine();
+        	int n,i,y1,y2,len,flag=0;
+        	len = s1.length();
+        	int shift[] = new int[len];
+        	
+        	for(i=0; i<len; ++i)
+			{
+				y1 = s1.charAt(i) - 64; //(int)s1[i] - 64;
+				y2 = s2.charAt(i) - 64; //(int)s2[i] - 64;
+
+				if( y2 >= y1)
+				{
+					n = y2-y1;
+				}
+				else
+				{
+					n = y1-y2;
+					n = 26 - n;
+				}
+				shift[i] = n;
+			}
+			for(i=0; i<len-1; ++i)
+			{
+				if(shift[i] != shift[i+1])
+				{
+					flag = 1;
+					break;
+				}
+			}
+			if(flag == 1)
+				System.out.println("-1");
+			else
+				System.out.println(shift[0]);
+        }
+    }
+}
