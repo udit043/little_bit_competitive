@@ -1,0 +1,45 @@
+Hello sir,
+
+I am Udit Raikwar from Jabalpur, I have completed Bachelor of Engineering in Information Technology branch from Jabalpur Engineering College with CGPA of 7.66 in 2017. I have completed Senior Secondary School from Kendriya Vidyalaya COD, Jabalpur with aggregate: 79.40% in 2013
+
+I have done Google Summer of Code with Debian organisation. Google Summer of Code is an open source program which lets you involve in developing of open source software. It's 4 month internship program in which only 1200 students from world are selected on the basis of proposal and past work and Google give stipend of 5500$(Fifty five hundred dollars) to each successful student.
+
+Work I have done during GSoC:
+➢ Improve logging (log symbolic error names instead of numeric error number values). ENo 5 = INput/OUTput error
+➢ Enable TLS SNI support for client and server connection. 
+➢ Enable the client to send the SNI name in outgoing TLS connections to other servers.
+➢ Detect if incoming connection request a specific hostname using SNI and reply with
+the appropriate server certificate
+
+Projects that I have worked upon:
+Operate mouse with finger gestures
+➢ Created a project to operate mouse and played snooker with the help of index finger
+gestures using OpenCV C++ API.
+➢ Link: github(https://goo.gl/CGJzJg), youtube(https://youtu.be/i4HqZAH_TZU)
+
+Hand gesture recognition program
+➢ Created a hand gesture recognition program using OpenCV with C++ API.
+➢ Link: github(https://goo.gl/iUzNAE), youtube(https://youtu.be/H9diqywK6NY)
+
+Keyboard pattern tracker
+➢ Track graphically the keys pressed on keyboard using OpenCV with C++ API.
+➢ Link: github(https://goo.gl/QLNfEh), youtube(https://youtu.be/_M0BfcSoQcg)
+
+Found security leak in WeChat messaging app
+➢ Found one security leak using which anyone can logged in to other's account and redeem their balance without knowing them.
+➢ Link: github(https://goo.gl/zLX33h)
+
+Customized shortcut keys
+➢ Made a program to capture pressed keys and perform task associated with that keys.
+➢ Link: github(https://goo.gl/LbAVPf), youtube(https://youtu.be/xXnfW_pzV-c)
+
+------------------------------------------------------------------------------
+
+Hello,
+
+I am Udit Raikwar from Jabalpur, I have completed Bachelor of Engineering in Information Technology branch from Jabalpur Engineering College with CGPA of 7.66 in 2017. I have completed Senior Secondary School from Kendriya Vidyalaya COD, Jabalpur with aggregate: 79.40% in 2013
+
+I have done Google Summer of Code with Debian organisation. Google Summer of Code is an open source program which lets you involve in developing of open source software. It's 4 month internship program in which only 1200 students from world are selected on the basis of proposal and past work.
+
+I was visiting your career section but do not found any relevant information that's why I am writing to you. 
+I am attaching my resume with the mail if there is any job available for me please inform me.
