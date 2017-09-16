@@ -1,4 +1,4 @@
-// incomplete
+// editorial
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -10,34 +10,23 @@ int main()
 	{
 		string s;
 		cin >> s;
-		int i;
-		unsigned long long int num = 100000,l = 100000,r = 100000;
-
-		for(i=0; i<s.length(); ++i) // deciding number on left side of sign
+		long long int i,ks=0, kg=0, mks=0, mkg=0;
+		for(i=0; i<s.length(); ++i)
 		{
 			if(s[i] == '>')
 			{
-				num += 1;
-				r = max(r, num);
+				ks = 0;
+				kg += 1;
 			}
 			else if(s[i] == '<')
 			{
-				num -= 1;
-				l = min(l, num);
+				ks += 1;
+				kg = 0;
 			}
+			mks = max(mks, ks);
+			mkg = max(mkg, kg);
 		}
-
-		if(s[i-1] == '>') // deciding number on right side of sign
-		{
-			num -= 1;
-			l = min(l, num);
-		}
-		else if(s[i-1] == '<')
-		{
-			num += 1;
-			r = max(r, num);
-		}
-		cout << (r-l+1) << "\n";
+		cout << max(mks, mkg) + 1 << "\n";
 	}
 	return 0;
 }
